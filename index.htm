@@ -13,6 +13,72 @@ body {
 	background-color: #A7B6CD;
 }
 
+.container
+{
+  position: relative;
+}
+.menu-right {
+  position: absolute;
+  top: -50px;
+  right: 16px;
+  text-align: right;  
+}
+.menu-right-text{
+	display: inline-block;
+	font: bold 12px Courier;
+  font-size: 300%;
+  transform: scale(.75, 1);
+  line-height: 70%;
+  letter-spacing: -7px;
+}
+.info-float{
+  position: absolute;
+  top: 8px;
+  right: 60%;
+}
+.info-float-text-a {
+	font: bold 12px Courier;  
+  font-size: 100%;    
+   line-height: 80%;
+}
+
+.info-float-text-b {
+	font: 30px Verdana;  
+  font-size: 110%;    
+   line-height: 105%;
+   padding-bottom: 30px;
+}
+
+
+
+
+img {
+    display: block;
+}
+
+.thumbnail {
+    position: relative;
+    display: inline-block;
+}
+
+.caption {
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    transform: translate( 15%, -80% );
+    text-align: left;
+    color: white;
+}
+.caption-menu {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate( -18%, -85% );
+}
+
+
+
+
 div.nav
 {
 width: 99%;
@@ -46,7 +112,9 @@ a:active {
 .style4 {font-size: smaller; line-height:14pt;}
 .style5 {font-size: 90%; line-height:14pt;}
 .style7 {font-size: x-large}
-.style9 {font-size: x-large; font-weight: bold; }
+
+
+
 -->
 </style>
 <meta name="description" content="Personal webpage for Craig Sailor, linguist">
@@ -80,34 +148,36 @@ function MM_swapImage() { //v3.0
 </head>
 
 
-<body onLoad="MM_preloadImages('B_small.jpg')"><a name="top"></a>
+<body><a name="top"></a>
 <br>
-<table width="60%"  border="0" align="center" cellspacing="5">
-  <tr>
-    <td><span class="style9">Craig Sailor </span></td>
-    <td><div align="right" class="style7">University of Edinburgh</div></td>
-  </tr>
-</table>
-<table width="60%"  border="0" align="center" cellspacing="5" bgcolor="#FFFFFF" style="border-color: #FFF39D; border-width:8pt; border-style: solid">
+<table width="50%"  border="0" align="center" cellspacing="0" bgcolor="#FFFFFF" style="border-color: #FFF39D; border-width:8pt; border-style: solid">
   <tr valign="middle">
-    <td width="0%"><a href="http://www.flickr.com/photos/57449897@N07/sets/72157626958066840/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('pic','','B_small.jpg',1)"><img src="A_small.jpg" name="pic" width="240" height="148" border="0" title="Mugshot"></a>
-    </td>
-    <td width="100%"><p>Craig Sailor<br>
-        <a href="mailto:cwsailor@gmail.com"><img src="email.png" alt="e-mail" width="149" height="23" border="0"></a>
+    <td width="0%">
+      <div class="thumbnail">
+          <img src="site_me_wide.jpg" alt="">
+          <div class="caption">
+  <p class="info-float-text-a" style="font-size:200%; margin: 10px 0;">Craig Sailor<br><a href="mailto:cwsailor@gmail.com" style="font-size:50%;">cwsailor@gmail.com</a></p>
+  <p class="info-float-text-b" style="margin: 3px 0;"><strong>University of Edinburgh</strong></p>
+  <p class="info-float-text-b" style="margin: -30px 0;font-size:105%;">Department of Linguistics<br>and English Language</p>
+          </div>
+      </div>
+
+                    <div class="caption-menu" align="right" style="vertical-align: bottom;">
+    <span class="menu-right-text">
+    <p style="margin: 5px 0"><a href="#about">.about</a><br>
+	<a href="sailor_vita.pdf" target="_blank">.cv</a><br>
+	<a href="#papers">.papers</a><br>
+	<a href="#presentations">.talks</a>
     </p>
-      <p>        Linguistics and English Language<br>
-      School of Philosophy, Psychology and Language Sciences<br>
-      University of Edinburgh <br>
-      Edinburgh, 
-      UK</p></td>
-  </tr>
-  <tr>
-    <td colspan="2"><div class="nav">
-      <p class="style2"><a href="#about">About&nbsp;me</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#theses">Theses/Dissertation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#papers">Some papers</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#presentations">Presentations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="sailor_vita.pdf" target="_blank">CV</a></p></div></td>
+      </span>
+
+            </div>
+      </td>
   </tr>
 
+
   <tr>
-    <td colspan="4"><a name="about"></a><p class="style5"><strong>About me</strong> <a href="#top"><img src="arrow.gif" border="0" title="Back to top"></a></p>
+    <td colspan="4"  style="padding: 5px;"><a name="about"></a><p class="style5"><strong>About me</strong> <a href="#top" style="text-decoration: none;">&#8613;</a></p>
     <p class="style4">I'm a teaching fellow in syntax at the University of Edinburgh's department of <a href="https://www.ed.ac.uk/ppls/linguistics-and-english-language" target="_blank">Linguistics and English Language</a>. My research is primarily in <a href="http://en.wikipedia.org/wiki/Generative_grammar" target="_blank">theoretical syntax</a> and its interfaces.  I am especially interested in <a href="http://en.wikipedia.org/wiki/Ellipsis_%28linguistics%29" target="_blank">ellipsis</a>, and what it can tell us about how (and when) abstract syntactic structures are mapped onto phonological strings.</p>
 <p class="style4">Topics I've been working on recently include:<ul class="style4">
 	<li>Implications of strict modularity for the syntax-phonology interface (with <a href="https://heathernewell.ca/" target="_blank">Heather Newell</a>)</li>
@@ -123,7 +193,7 @@ function MM_swapImage() { //v3.0
 </ul>
 
 <p class="style4">A selection of papers and handouts can be found below.  For a complete list, see my <a href="sailor_vita.pdf" target="_blank">CV</a>.<br>&nbsp;<span class="style5"><a name="theses"></a></span></p>
-    <p class="style5"><strong>Theses/Dissertation</strong> <a href="#top"><img src="arrow.gif" alt="top" border="0" title="Back to top"></a></p>
+    <p class="style5"><strong>Theses/Dissertation</strong> <a href="#top" style="text-decoration: none;">&#8613;</a></p>
     <p class="style4">Sailor, Craig. 2014. <a href="http://ling.auf.net/lingbuzz/002380" target="_blank"><em>The Variables of VP Ellipsis</em></a>. Doctoral dissertation, UCLA.</p>
     <p class="style4">Sailor, Craig. 2009. <em><a href="papers/sailor_thesis_10-3-11.pdf" target="_blank">Tagged for Deletion: A Typological Approach to VP Ellipsis in Tag Questions</a></em>. Master's thesis, UCLA.    </p>
     <p class="style4">Turnbull-Sailor, Craig. 2007. <em>Syntactic Patterns of Embedded wh- Clauses</em>. Master's thesis, University of Kansas.<br>
@@ -132,7 +202,7 @@ function MM_swapImage() { //v3.0
     
     
     
-<p class="style5"><strong>Some recent papers </strong>(for a complete list, see my CV) <a href="#top"><img src="arrow.gif" alt="top" border="0" title="Back to top"></a></p>
+<p class="style5"><strong>Some recent papers </strong>(for a complete list, see my CV) <a href="#top" style="text-decoration: none;">&#8613;</a></p>
 
 <p class="style4">Sailor, Craig. To appear. &quot;<a href="https://ling.auf.net/lingbuzz/006050" target="_blank">The morphophonology of ellipsis: evidence for Segregated Transfer</a>.&quot; In <em>The Derivational Timing of Ellipsis</em>, eds. A. Lipt&aacute;k and G. G&uuml;ne&scedil;. Oxford University Press.
 <p class="style4">Ahn, Byron, Sunwoo Jeong, and Craig Sailor. To appear. &quot;<a href="https://ling.auf.net/lingbuzz/006064" target="_blank">Systematic 'stray' focus stress in English? ApparentLY!</a>.&quot; In <em>Proceedings of WCCFL 39</em>.
@@ -156,7 +226,7 @@ function MM_swapImage() { //v3.0
     
     
       <br>&nbsp;<span class="style5"><a name="presentations"></a></span></p>
-    <p class="style5"><strong>Some recent presentations & handouts</strong> <a href="#top"><img src="arrow.gif" alt="top" border="0" title="Back to top"></a></p>
+    <p class="style5"><strong>Some recent presentations & handouts</strong> <a href="#top" style="text-decoration: none;">&#8613;</a></p>
 
 <p class="style4">Sailor, Craig. 2021. &quot;<a href="papers/ReVerSe_talk.pdf" target="_blank">Partial V2: Residue or innovation?</a>.&quot; Presented at the Residual Verb Second in Romance workshop 1, 10 June 2021, Oslo, Norway (online).</p>
 
@@ -199,12 +269,12 @@ function MM_swapImage() { //v3.0
   <tr>
     <td colspan="4"><div align="center" class="style1">
       <div align="center">
-        <p><a href="#top" class="style1">Back to top <img src="arrow.gif" border="0" title="Back to top"></a></p>
-        <p>Last updated: <span class="style3">12 July 2021</span></p>
+        <p><a href="#top" class="style1">&#8613; Back to top &#8613;</a></p>
+        <p>Last updated: <span class="style3">15 February 2022</span></p>
       </div>
     </div></td>
   </tr>
-</table>
+</table> 
 
 
 
