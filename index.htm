@@ -13,12 +13,78 @@ body {
 	background-color: #A7B6CD;
 }
 
+.container
+{
+  position: relative;
+}
+.menu-right {
+  position: absolute;
+  top: -50px;
+  right: 16px;
+  text-align: right;  
+}
+.menu-right-text{
+	display: inline-block;
+	font: bold 12px Courier;
+  font-size: 300%;
+  transform: scale(.75, 1);
+  line-height: 70%;
+  letter-spacing: -7px;
+}
+.info-float{
+  position: absolute;
+  top: 8px;
+  right: 60%;
+}
+.info-float-text-a {
+	font: bold 12px Courier;  
+  font-size: 100%;    
+   line-height: 80%;
+}
+
+.info-float-text-b {
+	font: 30px Verdana;  
+  font-size: 110%;    
+   line-height: 105%;
+   padding-bottom: 30px;
+}
+
+
+
+
+img {
+    display: block;
+}
+
+.thumbnail {
+    position: relative;
+    display: inline-block;
+}
+
+.caption {
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    transform: translate( 15%, -80% );
+    text-align: left;
+    color: white;
+}
+.caption-menu {
+    position: absolute;
+    top: 82%;
+    left: 79%;
+    transform: translate( 15%, -80% );
+}
+
+
+
+
 div.nav
 {
 width: 99%;
 padding: 2px;
-border-top: 2px solid #FFF39D;
-border-bottom: 2px solid #FFF39D;
+border-top: 2px solid #006699;
+border-bottom: 2px solid #006699;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
@@ -46,11 +112,13 @@ a:active {
 .style4 {font-size: smaller; line-height:14pt;}
 .style5 {font-size: 90%; line-height:14pt;}
 .style7 {font-size: x-large}
-.style9 {font-size: x-large; font-weight: bold; }
+
+
+
 -->
 </style>
 <meta name="description" content="Personal webpage for Craig Sailor, linguist">
-<meta name="keywords" content="Craig Sailor, Craig Turnbull-Sailor, polarity, tag questions, ellipsis, syntax, linguistics, trinity college dublin, tcd, edinburgh, university of edinburgh, UCLA, Los Angeles, KU, University of Kansas, Lawrence">
+<meta name="keywords" content="Craig Sailor, Craig Turnbull-Sailor, polarity, tag questions, ellipsis, syntax, linguistics, trinity college dublin, trinity, tcd, edinburgh, university of edinburgh, UCLA, Los Angeles, KU, University of Kansas, Lawrence">
 <script language="JavaScript" type="text/JavaScript">
 <!--
 function MM_swapImgRestore() { //v3.0
@@ -80,35 +148,36 @@ function MM_swapImage() { //v3.0
 </head>
 
 
-<body onLoad="MM_preloadImages('B_small.jpg')"><a name="top"></a>
+<body><a name="top"></a>
 <br>
-<table width="60%"  border="0" align="center" cellspacing="5">
-  <tr>
-    <td><span class="style9">Craig Sailor </span></td>
-    <td><div align="right" class="style7">Trinity College Dublin</div></td>
-  </tr>
-</table>
-<table width="60%"  border="0" align="center" cellspacing="5" bgcolor="#FFFFFF" style="border-color: #FFF39D; border-width:8pt; border-style: solid">
+<table width="50%"  border="0" align="center" cellspacing="0" bgcolor="#FFFFFF" style="border-color: #A7B6CD; border-width:8pt; border-style: solid">
   <tr valign="middle">
-    <td width="0%"><a href="http://www.flickr.com/photos/57449897@N07/sets/72157626958066840/" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('pic','','B_small.jpg',1)"><img src="A_small.jpg" name="pic" width="240" height="148" border="0" title="Mugshot"></a>
-    </td>
-    <td width="100%"><p>Craig Sailor<br>
-        <a href="mailto:cwsailor@gmail.com"><img src="email.png" alt="e-mail" width="149" height="23" border="0"></a>
+    <td width="0%">
+      <div class="thumbnail">
+          <img src="site_me_wide.jpg" alt="">
+          <div class="caption">
+  <p class="info-float-text-a" style="font-size:200%; margin: 10px 0;">Craig Sailor<br><a href="mailto:cwsailor@gmail.com" style="font-size:50%;">cwsailor@gmail.com</a></p>
+  <p class="info-float-text-b" style="margin: 3px 0;"><strong>Trinity College Dublin</strong></p>
+  <p class="info-float-text-b" style="margin: -30px 0;font-size:105%;">Centre for Language & Communication Sciences</p>
+          </div>
+
+                    <div class="caption-menu" align="right">
+    <span class="menu-right-text">
+    <p style="margin: 5px 0"><a href="#about">.about</a><br>
+	<a href="sailor_vita.pdf" target="_blank">.cv</a><br>
+	<a href="#papers">.papers</a><br>
+	<a href="#presentations">.talks</a>
     </p>
-      <p>        Centre for Language & Communication Sciences<br>
-      School of Linguistic, Speech and Communication Sciences<br>
-      Trinity College Dublin <br>
-      Dublin, 
-      Ireland</p></td>
-  </tr>
-  <tr>
-    <td colspan="2"><div class="nav">
-      <p class="style2"><a href="#about">About&nbsp;me</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#theses">Theses/Dissertation</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#papers">Some papers</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#presentations">Presentations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="sailor_vita.pdf" target="_blank">CV</a></p></div></td>
+      </span>
+	</div>
+            </div>
+      </td>
   </tr>
 
+
   <tr>
-    <td colspan="4"><a name="about"></a><p class="style5"><strong>About me</strong> <a href="#top"><img src="arrow.gif" border="0" title="Back to top"></a></p>
-    <p class="style4">I'm a research fellow at Trinity College Dublin, within the <a href="https://www.tcd.ie/slscs/clcs/" target="_blank">Centre for Language & Communication Sciences</a>. My research is primarily in <a href="http://en.wikipedia.org/wiki/Generative_grammar" target="_blank">theoretical syntax</a> and its interfaces.  I am especially interested in <a href="http://en.wikipedia.org/wiki/Ellipsis_%28linguistics%29" target="_blank">ellipsis</a>, and what it can tell us about how (and when) abstract syntactic structures are mapped onto phonological strings.</p>
+    <td colspan="4"  style="padding: 5px;"><a name="about"></a><p class="style5"><strong>About me</strong> <a href="#top" style="text-decoration: none;">&#8613;</a></p>
+    <p class="style4">I'm a research fellow at Trinity College Dublin within the <a href="https://www.tcd.ie/slscs/clcs/" target="_blank">Centre for Language & Communication Sciences</a>. My research is primarily in <a href="http://en.wikipedia.org/wiki/Generative_grammar" target="_blank">theoretical syntax</a> and its interfaces.  I am especially interested in <a href="http://en.wikipedia.org/wiki/Ellipsis_%28linguistics%29" target="_blank">ellipsis</a>, and what it can tell us about how (and when) abstract syntactic structures are mapped onto phonological strings.</p>
 <p class="style4">Topics I've been working on recently include:<ul class="style4">
 	<li>Implications of strict modularity for the syntax-phonology interface (with <a href="https://heathernewell.ca/" target="_blank">Heather Newell</a>)</li>
 	<li>The timing of ellipsis: diagnosing when silence takes hold by looking at how ellipsis disrupts (post-)syntactic operations</li>
@@ -122,19 +191,12 @@ function MM_swapImage() { //v3.0
 	</ul>
 </ul>
 
-<p class="style4">A selection of papers and handouts can be found below.  For a complete list, see my <a href="sailor_vita.pdf" target="_blank">CV</a>.<br>&nbsp;<span class="style5"><a name="theses"></a></span></p>
-    <p class="style5"><strong>Theses/Dissertation</strong> <a href="#top"><img src="arrow.gif" alt="top" border="0" title="Back to top"></a></p>
-    <p class="style4">Sailor, Craig. 2014. <a href="http://ling.auf.net/lingbuzz/002380" target="_blank"><em>The Variables of VP Ellipsis</em></a>. Doctoral dissertation, UCLA.</p>
-    <p class="style4">Sailor, Craig. 2009. <em><a href="papers/sailor_thesis_10-3-11.pdf" target="_blank">Tagged for Deletion: A Typological Approach to VP Ellipsis in Tag Questions</a></em>. Master's thesis, UCLA.    </p>
-    <p class="style4">Turnbull-Sailor, Craig. 2007. <em>Syntactic Patterns of Embedded wh- Clauses</em>. Master's thesis, University of Kansas.<br>
-      <span class="style5"><a name="papers"></a></span><br>
-    </p>
+<p class="style4">A selection of papers and handouts can be found below.  For a complete list, see my <a href="sailor_vita.pdf" target="_blank">CV</a>.<br>&nbsp;<span class="style5"><a name="papers"></a></span></p>    
     
     
-    
-<p class="style5"><strong>Some recent papers </strong>(for a complete list, see my CV) <a href="#top"><img src="arrow.gif" alt="top" border="0" title="Back to top"></a></p>
+<p class="style5"><strong>Some recent papers </strong>(for a complete list, see my CV) <a href="#top" style="text-decoration: none;">&#8613;</a></p>
 
-<p class="style4">Sailor, Craig. To appear. &quot;<a href="https://ling.auf.net/lingbuzz/006050" target="_blank">The morphophonology of ellipsis: evidence for Segregated Transfer</a>.&quot; In <em>The Derivational Timing of Ellipsis</em>, eds. A. Lipt&aacute;k and G. G&uuml;ne&scedil;. Oxford University Press.
+<p class="style4">Sailor, Craig. 2022. &quot;<a href="https://ling.auf.net/lingbuzz/006050" target="_blank">The morphophonology of ellipsis: evidence for Segregated Transfer</a>.&quot; In <em>The Derivational Timing of Ellipsis</em>, eds. A. Lipt&aacute;k and G. G&uuml;ne&scedil;. Oxford University Press.
 <p class="style4">Ahn, Byron, Sunwoo Jeong, and Craig Sailor. To appear. &quot;<a href="https://ling.auf.net/lingbuzz/006064" target="_blank">Systematic 'stray' focus stress in English? ApparentLY!</a>.&quot; In <em>Proceedings of WCCFL 39</em>.
 <p class="style4">Sailor, Craig. 2020. &quot;<a href="https://ling.auf.net/lingbuzz/006017" target="_blank">Rethinking 'residual' verb second</a>.&quot; In <em>Rethinking Verb Second</em>, eds. R. Woods and S. Wolfe. Oxford University Press.
 	<p class="style4">Sailor, Craig. 2018. &quot;<a href="https://link.springer.com/article/10.1007/s11049-017-9391-y" target="_blank">The Typology of Head Movement and Ellipsis: a reply to Lipt&aacute;k &amp; Saab</a>.&quot; <em>Natural Language &amp; Linguistic Theory</em> 36:851-875.
@@ -156,9 +218,9 @@ function MM_swapImage() { //v3.0
     
     
       <br>&nbsp;<span class="style5"><a name="presentations"></a></span></p>
-    <p class="style5"><strong>Some recent presentations & handouts</strong> <a href="#top"><img src="arrow.gif" alt="top" border="0" title="Back to top"></a></p>
+    <p class="style5"><strong>Some recent presentations & handouts</strong> <a href="#top" style="text-decoration: none;">&#8613;</a></p>
 
-<p class="style4">Sailor, Craig. 2021. &quot;<a href="papers/ReVerSe_talk.pdf" target="_blank">Partial V2: Residue or innovation?</a>.&quot; Presented at the Residual Verb Second in Romance workshop 1, 10 June 2021, Oslo, Norway (online).</p>
+<p class="style4">Sailor, Craig. 2021. &quot;<a href="papers/ReVerSe_talk.pdf" target="_blank">Partial V2: Residue or innovation?</a>&quot; Presented at the Residual Verb Second in Romance workshop 1, 10 June 2021, Oslo, Norway (online).</p>
 
 <p class="style4">Sailor, Craig. 2021. &quot;<a href="https://www.mmll.cam.ac.uk/cambridge-occasional-papers-linguistics/tal-talks" target="_blank">Ellipsis in a modular perspective</a>.&quot; Presented at the Cambridge SyntaxLab, 1 March 2021, Cambridge, England (online).</p>
 
@@ -194,17 +256,28 @@ function MM_swapImage() { //v3.0
     
     <p class="style4">Sailor, Craig and Grace Kuo. 2010. &quot;<a href="papers/sailor_kuo_IACL18_2010.pdf" target="_blank">Taiwanese VP Ellipsis and the Progressive Prohibition</a>.&quot;  Ms., UCLA. Presented at the joint meeting of the International Association of Chinese Linguistics 18 (IACL-18) and the North American Conference on Chinese Linguistics 22 (NACCL-22), Harvard University.</p>
     <p class="style4"><br>
-    </p></td>
+    </p>
+
+    <p class="style5"><strong>Theses/Dissertation</strong> <a href="#top" style="text-decoration: none;">&#8613;</a></p>
+    <p class="style4">Sailor, Craig. 2014. <a href="http://ling.auf.net/lingbuzz/002380" target="_blank"><em>The Variables of VP Ellipsis</em></a>. Doctoral dissertation, UCLA.</p>
+    <p class="style4">Sailor, Craig. 2009. <em><a href="papers/sailor_thesis_10-3-11.pdf" target="_blank">Tagged for Deletion: A Typological Approach to VP Ellipsis in Tag Questions</a></em>. Master's thesis, UCLA.    </p>
+    <p class="style4">Turnbull-Sailor, Craig. 2007. <em>Syntactic Patterns of Embedded wh- Clauses</em>. Master's thesis, University of Kansas.<br>
+      <span class="style5"></span><br>
+    </p>
+
+
+    
+    </td>
   </tr>
   <tr>
     <td colspan="4"><div align="center" class="style1">
       <div align="center">
-        <p><a href="#top" class="style1">Back to top <img src="arrow.gif" border="0" title="Back to top"></a></p>
-        <p>Last updated: <span class="style3">12 July 2021</span></p>
+        <p><a href="#top" class="style1">&#8613; Back to top &#8613;</a></p>
+        <p>Last updated: <span class="style3">15 February 2022</span></p>
       </div>
     </div></td>
   </tr>
-</table>
+</table> 
 
 
 
