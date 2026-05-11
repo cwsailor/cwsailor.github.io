@@ -259,17 +259,21 @@ ul#nav li {
 
 ul#nav li a
 { /* letter-spacing: 0.1em; */
-  font: 500 .935em 'Nunito' ;
-  display: block;
+ font-family: 'Nunito';
+  font-weight: 500;
+  font-size: 15px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
   /* float: left; */
-  height: 23px;
-  padding: 2px 12px 0px 12px;
+  padding: 3px 12px;
+  text-decoration: none;
+  margin-right: 0;
 /*   text-align: center; */
 /*   color: #FFF; */
 /*   text-transform: uppercase; */
   background: transparent;
-  text-decoration: none;
-  margin-right: 3px;}
+}
 
 ul#nav li a:hover
 { color: #FFF;
